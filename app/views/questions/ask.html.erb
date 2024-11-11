@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="m-5">
+  <h1 class="text-md">Stupid Coaching</h1>
+  <p>ask your coach anything: </p>
+  <form action="/answer" data-turbo="false" method="get" class="input-group mb-3" >
+    <input class="form-control" type="text" name="question" placeholder="ask a question" value=<%= params[:question]%>>
+    <input type="submit" value="Ask!" class="btn btn-outline-secondary" style="background: #608BC1;">
+  </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="m-5 bg-secondary-subtle">
+  <h1>Stupid Coach</h1>
+  <div class="d-flex gap-3 my-3 p-3 bg-light">
+    <div class="d-flex bd-h-32">
+      <div class="vr border-1 opacity-100" style="width: 2px;"></div>
+    </div>
+    <div>
+      <p><%= @question %></p>
+      <p>-You</p>
+    </div>
+  </div>
+  <div class="d-flex gap-3 my-3 p-3 bg-warning">
+    <div class="d-flex bd-h-32">
+      <div class="vr border-1 opacity-100" style="width: 2px;"></div>
+    </div>
+    <div>
+      <p class="fw-bold"><%= @answer %></p>
+      <p>-Your coach</p>
+    </div>
+  </div>
+  <%= link_to 'Ask a question', ask_path,  :style => "text-decoration: none; font-size: 18px;"%>
+</body>
+</html>
